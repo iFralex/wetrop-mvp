@@ -58,6 +58,10 @@ The supplied minimal container produces a **normalized content PDF preview** for
 
 The dependency audit records seven inherited advisories (four moderate, three high; none critical), detailed in `.runtime/dependency-audit.json`. This is a local demonstration, not a production security release or a certified fiscal system. No tax filing, payment, push or deployment was performed.
 
+## Public release checks
+
+A fresh `npm ci --ignore-scripts` install and production build passed. The clean copy passed all 37 Wetrop tests and eight watch-engine tests. The bundled synthetic snapshot contains four integrity-checked SQLite databases, three example practices and six deadlines. Restore verifies file checksums, preserves document hashes, contains no bindings/pending sends/jobs, and refuses to overwrite a populated company folder. Runtime credentials and live account state are excluded from Git.
+
 ## Reproduction
 
 ```sh

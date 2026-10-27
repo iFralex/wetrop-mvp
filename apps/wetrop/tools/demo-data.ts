@@ -163,6 +163,9 @@ if (command === "restore") {
     "Bundled synthetic demonstration dataset generated locally; no real account or client attached.",
   );
   graph(store);
+  for (const path of scope.files('wiki').filter(path => path.endsWith('.md'))) {
+    writeFileSync(scope.path(path), readFileSync(scope.path(path), 'utf8').trimEnd() + '\n');
+  }
   const counts = {
     documents: store.documents().length,
     practices: store.cases().length,
