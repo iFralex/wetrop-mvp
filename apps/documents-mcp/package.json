@@ -1,0 +1,28 @@
+{
+  "name": "@steward/documents-mcp",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "documents-mcp": "src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test \"test/**/*.test.ts\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@steward/embedding": "*",
+    "@steward/protocol": "*",
+    "@steward/search": "*",
+    "@steward/sensitive-path": "*",
+    "jszip": "^3.10.1",
+    "mammoth": "^1.10.0",
+    "pdfjs-dist": "^6.3.289"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

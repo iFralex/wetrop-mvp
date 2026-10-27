@@ -1,0 +1,11 @@
+Original: documents/originals/company-profile.json
+SHA-256: 9afbcbebbe7561a02e185f1b6f4dc9a5336c42e3d4bf6d5daa364e9440a5e73a
+
+{
+  "name": "Aurora Servizi S.r.l.",
+  "vatNumber": "DEMO-IT-00000000000",
+  "taxRegime": "Ordinary, monthly VAT — synthetic demo",
+  "address": "Via Esempio 12, Milano",
+  "email": "amministrazione@example.invalid",
+  "iban": "DEMO-NOT-A-BANK-ACCOUNT"
+}

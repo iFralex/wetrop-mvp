@@ -1,0 +1,717 @@
+:root {
+  color-scheme: light;
+}
+.wt-app,
+.wt-login {
+  font-family: "Geist Variable", sans-serif;
+  color: #253a30;
+  background: #fafbf8;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.wt-app button,
+.wt-login button {
+  cursor: pointer;
+}
+.wt-app {
+  display: flex;
+  height: 100dvh;
+  overflow: hidden;
+}
+.wt-sidebar {
+  width: 230px;
+  flex-shrink: 0;
+  background: #f1f4ee;
+  border-right: 1px solid #e0e6dd;
+  padding: 28px 18px;
+  display: flex;
+  flex-direction: column;
+}
+.wt-brand {
+  font-size: 32px;
+  font-weight: 760;
+  letter-spacing: -2px;
+  display: flex;
+  align-items: center;
+  color: #234534;
+}
+.wt-brand span {
+  font-weight: 500;
+}
+.wt-brand i {
+  display: block;
+  width: 7px;
+  height: 7px;
+  background: #d9a96f;
+  border-radius: 100%;
+  margin: 14px 0 0 4px;
+}
+.wt-workspace {
+  display: flex;
+  gap: 10px;
+  padding: 28px 0;
+  margin-bottom: 22px;
+  align-items: center;
+}
+.wt-avatar {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #cdd7ca;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  color: #476443;
+  background: #e5ebdf;
+  font-size: 12px;
+  font-weight: 700;
+}
+.wt-workspace strong {
+  font-size: 13px;
+}
+.wt-workspace small,
+.wt-chat-header small {
+  display: block;
+  color: #829080;
+  font-size: 11px;
+}
+.wt-eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.6px;
+  color: #899485;
+  font-weight: 650;
+}
+.wt-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 14px;
+}
+.wt-sidebar nav button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  padding: 10px 12px;
+  border-radius: 7px;
+  color: #6d7d6e;
+}
+.wt-sidebar nav button.active {
+  background: #e1e9dc;
+  color: #294a35;
+  font-weight: 600;
+}
+.wt-sidebar nav b {
+  margin-left: auto;
+  background: #fff9;
+  padding: 0 7px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+.wt-sidebar-bottom {
+  margin-top: auto;
+  color: #687d69;
+  font-size: 11px;
+}
+.wt-sidebar-bottom small {
+  display: block;
+  font-size: 10px;
+  color: #91a08f;
+  margin-top: 8px;
+}
+.wt-sidebar-bottom button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 20px;
+  color: #80907f;
+}
+.wt-status-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #7ca07b;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+.wt-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.wt-header {
+  height: 70px;
+  flex-shrink: 0;
+  border-bottom: 1px solid #e7ebe3;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #879282;
+  font-size: 12px;
+}
+.wt-header > span,
+.wt-header > div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.wt-content {
+  display: grid;
+  grid-template-columns: minmax(360px, 1fr) minmax(340px, 420px);
+  flex: 1;
+  min-height: 0;
+}
+.wt-panel {
+  padding: 35px 32px;
+  overflow-y: auto;
+}
+.wt-heading {
+  margin-bottom: 28px;
+}
+.wt-heading h1 {
+  font-size: 30px;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  margin: 11px 0;
+  color: #2b4332;
+  font-weight: 500;
+}
+.wt-heading p {
+  font-size: 12px;
+  color: #8a9685;
+}
+.wt-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid #e3e8de;
+  border-radius: 9px;
+  padding: 20px;
+  margin-bottom: 32px;
+  background: #fff;
+}
+.wt-metrics > div {
+  padding-left: 15px;
+  border-right: 1px solid #e6ebe0;
+}
+.wt-metrics > div:first-child {
+  padding-left: 0;
+}
+.wt-metrics > div:last-child {
+  border: 0;
+}
+.wt-metrics strong {
+  display: block;
+  font-size: 25px;
+  font-weight: 500;
+}
+.wt-metrics span {
+  font-size: 10px;
+  color: #8a9685;
+}
+.wt-section-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  color: #8a9685;
+  margin-bottom: 16px;
+}
+.wt-section-label button {
+  letter-spacing: 0;
+  font-size: 11px;
+  color: #587555;
+}
+.wt-case {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #e1e7db;
+  border-radius: 9px;
+  padding: 18px 20px;
+  background: white;
+  margin-bottom: 12px;
+  transition: border-color 0.2s;
+}
+.wt-case:hover,
+.wt-case.selected {
+  border-color: #91ad87;
+}
+.wt-case-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  color: #899784;
+  font-size: 10px;
+}
+.wt-case h3,
+.wt-box h3 {
+  font-weight: 550;
+  color: #344c36;
+  margin: 12px 0 6px;
+  font-size: 14px;
+}
+.wt-case p {
+  color: #8a9685;
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.wt-case-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+  color: #8c9b86;
+  font-size: 10px;
+}
+.wt-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+  border: 1px solid #e4dfcf;
+  border-radius: 5px;
+  background: #faf7ed;
+  color: #9c8755;
+  padding: 3px 7px;
+  font-size: 10px;
+}
+.wt-tag.good {
+  color: #537d56;
+  background: #f0f7ed;
+  border-color: #dce9d5;
+}
+.wt-tag.bad {
+  color: #b4685b;
+  background: #fff2ed;
+  border-color: #f0d9d1;
+}
+.wt-chat {
+  border-left: 1px solid #e0e7d9;
+  display: flex;
+  flex-direction: column;
+  background: #fffefb;
+  min-height: 0;
+}
+.wt-chat-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 21px 24px;
+  border-bottom: 1px solid #edf0e7;
+  height: 79px;
+}
+.wt-agent-mark {
+  background: #ebf1e6;
+  border: 1px solid #dae4d3;
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  color: #55734f;
+}
+.wt-chat-header strong {
+  font-size: 12px;
+  font-weight: 600;
+}
+.wt-chat-header > .wt-status-dot {
+  margin-left: auto;
+}
+.wt-messages {
+  padding: 25px;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+.wt-chat-welcome {
+  padding-top: 55px;
+}
+.wt-chat-welcome h2 {
+  font-size: 29px;
+  font-weight: 450;
+  letter-spacing: -0.8px;
+  line-height: 1.25;
+  margin: 16px 0;
+  color: #3b5138;
+}
+.wt-chat-welcome > p {
+  font-size: 12px;
+  color: #929b8a;
+  margin-bottom: 28px;
+  max-width: 260px;
+}
+.wt-chat-welcome button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  font-size: 11px;
+  padding: 11px 0;
+  border-bottom: 1px solid #ecefe5;
+  color: #6b8162;
+}
+.wt-chat-welcome button svg {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.wt-message {
+  font-size: 12px;
+  padding: 15px 0;
+  color: #52654c;
+  overflow-wrap: anywhere;
+}
+.wt-message small {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 9px;
+  color: #99a18f;
+  margin-bottom: 6px;
+}
+.wt-message.user {
+  background: #f0f4eb;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 10px 0;
+}
+.wt-message p {
+  margin: 7px 0;
+}
+.wt-message ul,
+.wt-message ol {
+  padding-left: 20px;
+}
+.wt-message pre {
+  white-space: pre-wrap;
+  max-width: 100%;
+  font-size: 11px;
+}
+.wt-composer {
+  margin: 15px;
+  border: 1px solid #dde5d4;
+  border-radius: 10px;
+  background: #fff;
+  padding: 12px;
+}
+.wt-composer textarea {
+  resize: none;
+  display: block;
+  min-height: 65px;
+  width: 100%;
+  font-size: 12px;
+  color: #53644e;
+  outline: none;
+  background: none;
+}
+.wt-composer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wt-composer small {
+  font-size: 9px;
+  color: #a0a793;
+}
+.wt-app [data-slot="button"],
+.wt-login [data-slot="button"] {
+  background: #496b46;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 11px;
+  padding: 8px 13px;
+  height: auto;
+  box-shadow: none;
+}
+.wt-app [data-variant="outline"] {
+  background: white;
+  border: 1px solid #d7dfce;
+  color: #526f4c;
+}
+.wt-box {
+  padding: 20px;
+  border: 1px solid #e1e7d8;
+  border-radius: 9px;
+  background: white;
+  margin: 18px 0;
+}
+.wt-box p {
+  font-size: 12px;
+  color: #7d8c75;
+  margin: 8px 0;
+}
+.wt-box small {
+  font-size: 10px;
+  color: #919d86;
+  display: block;
+  margin-top: 10px;
+}
+.wt-box button:not([data-slot="button"]) {
+  font-size: 11px;
+  color: #597b50;
+}
+.wt-box [data-slot="input"] {
+  margin: 10px 0;
+}
+.wt-file {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e9ede3;
+}
+.wt-file > div {
+  flex: 1;
+  min-width: 0;
+}
+.wt-file strong {
+  font-size: 12px;
+  display: block;
+  overflow-wrap: anywhere;
+}
+.wt-file small {
+  font-size: 10px;
+  display: block;
+  color: #99a18f;
+  overflow-wrap: anywhere;
+}
+.wt-file > svg {
+  color: #84957a;
+  flex-shrink: 0;
+}
+.wt-list {
+  margin-top: 20px;
+}
+.wt-download {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  font-size: 11px;
+  text-align: left;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+.wt-download svg {
+  flex-shrink: 0;
+}
+.wt-buttons {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.wt-empty {
+  padding: 40px 15px;
+  text-align: center;
+  color: #9aa58f;
+  border: 1px dashed #dce4d3;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.wt-empty svg {
+  margin: 0 auto 15px;
+  color: #a6b59a;
+}
+.wt-empty h3 {
+  font-size: 15px;
+  color: #607454;
+}
+.wt-empty p {
+  font-size: 12px;
+  margin: 8px 0 18px;
+}
+.wt-empty button {
+  font-size: 11px;
+  color: #597d4c;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+.wt-error {
+  padding: 12px 18px;
+  background: #fff0e9;
+  color: #9b5548;
+  border: 1px solid #eed3c7;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.wt-error button {
+  margin-left: 15px;
+  text-decoration: underline;
+}
+.wt-notice {
+  padding: 9px 30px;
+  background: #f9f5e9;
+  color: #998454;
+  font-size: 11px;
+}
+.wt-thinking {
+  font-size: 10px;
+  color: #8c9e7e;
+}
+.wt-audit {
+  padding: 10px 0;
+  border-bottom: 1px solid #e5eadd;
+}
+.wt-audit small {
+  font-size: 10px;
+  color: #98a28d;
+}
+.wt-audit p {
+  font-size: 12px;
+}
+.wt-graph {
+  width: 100%;
+  height: 330px;
+}
+.wt-panel textarea {
+  width: 100%;
+  border: 1px solid #dce4d2;
+  padding: 10px;
+  border-radius: 7px;
+  background: white;
+  font-size: 12px;
+  min-height: 80px;
+}
+.wt-panel > label {
+  font-size: 11px;
+  color: #7c8b70;
+}
+.wt-box pre {
+  font-size: 10px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin: 10px 0;
+}
+.wt-login {
+  min-height: 100dvh;
+  padding: 70px max(30px, calc((100vw - 460px) / 2));
+  box-sizing: border-box;
+}
+.wt-login .wt-brand {
+  margin-bottom: 70px;
+}
+.wt-login h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin: 18px 0;
+}
+.wt-login > p {
+  color: #89947f;
+  margin: 25px 0;
+}
+.wt-login form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+.wt-login label {
+  font-size: 12px;
+}
+.wt-login small {
+  font-size: 10px;
+  color: #9da58f;
+}
+.wt-login [data-slot="input"] {
+  background: white;
+  color: #42543a;
+}
+.wt-login [data-slot="button"] {
+  padding: 12px;
+  justify-content: space-between;
+}
+@media (min-width: 1500px) {
+  .wt-content {
+    grid-template-columns: minmax(500px, 1fr) 480px;
+  }
+  .wt-panel {
+    padding: 45px 55px;
+  }
+}
+@media (max-width: 1000px) {
+  .wt-sidebar {
+    width: 180px;
+    padding: 24px 12px;
+  }
+  .wt-content {
+    grid-template-columns: 1fr;
+  }
+  .wt-panel {
+    max-height: 50dvh;
+  }
+  .wt-chat {
+    border-left: 0;
+    border-top: 1px solid #e0e7d9;
+    min-height: 45dvh;
+  }
+  .wt-chat-welcome {
+    padding-top: 10px;
+  }
+  .wt-messages {
+    min-height: 140px;
+  }
+  .wt-composer {
+    margin: 8px 15px;
+  }
+  .wt-chat-header {
+    height: 60px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 650px) {
+  .wt-sidebar {
+    width: 62px;
+    padding: 20px 8px;
+  }
+  .wt-sidebar .wt-brand {
+    font-size: 26px;
+    justify-content: center;
+  }
+  .wt-sidebar .wt-brand span,
+  .wt-workspace,
+  .wt-sidebar > .wt-eyebrow,
+  .wt-sidebar-bottom {
+    display: none;
+  }
+  .wt-sidebar nav button {
+    font-size: 0;
+    padding: 12px;
+  }
+  .wt-sidebar nav b {
+    font-size: 9px;
+    position: absolute;
+    margin-left: 16px;
+  }
+  .wt-header {
+    padding: 0 16px;
+    height: 55px;
+  }
+  .wt-panel {
+    padding: 25px 18px;
+  }
+  .wt-heading h1 {
+    font-size: 26px;
+  }
+  .wt-metrics {
+    padding: 15px;
+  }
+  .wt-metrics span {
+    font-size: 9px;
+  }
+  .wt-notice {
+    padding: 9px 16px;
+  }
+  .wt-chat {
+    min-height: 50dvh;
+  }
+}

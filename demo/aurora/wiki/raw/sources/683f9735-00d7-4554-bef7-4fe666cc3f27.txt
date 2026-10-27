@@ -1,0 +1,11 @@
+Original: documents/originals/energia-september.txt
+SHA-256: 907ae125f7325e7bd7c685063b46d476dcc51fcf59ebe3a397dcf757d663f785
+
+SYNTHETIC INVOICE — NOT VALID FOR TAX PURPOSES
+Supplier: Energia Demo S.r.l.
+Customer: Aurora Servizi S.r.l.
+Invoice: EN-2026-09
+Date: 2026-09-30
+Net EUR 100.00
+VAT EUR 22.00
+Total EUR 122.00

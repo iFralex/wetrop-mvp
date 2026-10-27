@@ -1,0 +1,49 @@
+{
+  "name": "wetrop-monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "node --import tsx apps/wetrop/src/server.ts",
+    "start": "node --import tsx apps/wetrop/src/server.ts",
+    "wetrop:dev": "node --import tsx apps/wetrop/src/server.ts",
+    "wetrop:seed": "node --import tsx apps/wetrop/src/seed.ts",
+    "wetrop:test": "npm test -w @steward/wetrop",
+    "wetrop:build": "npm run typecheck -w @steward/wetrop && npm run build -w @steward/web",
+    "wetrop:tools": "node apps/wetrop/tools/prepare.mjs && docker compose -f compose.wetrop.yml up -d",
+    "wetrop:reset": "node --import tsx apps/wetrop/src/reset.ts",
+    "wetrop:e2e": "PLAYWRIGHT_BROWSERS_PATH=.runtime/browsers node apps/wetrop/e2e/browser.mjs",
+    "test": "npm run wetrop:test",
+    "build": "npm run wetrop:build",
+    "wetrop:login": "node --import tsx apps/wetrop/src/chatgpt-login.ts",
+    "wetrop:acceptance": "node --import tsx apps/wetrop/e2e/acceptance.ts",
+    "wetrop:storage-test": "node --import tsx apps/wetrop/e2e/storage.ts",
+    "wetrop:portable-test": "node --import tsx apps/wetrop/e2e/portable.ts",
+    "wetrop:demo:snapshot": "node --import tsx apps/wetrop/tools/demo-data.ts snapshot",
+    "wetrop:demo:restore": "node --import tsx apps/wetrop/tools/demo-data.ts restore"
+  },
+  "workspaces": [
+    "apps/host",
+    "apps/web",
+    "apps/action-center",
+    "apps/calendar-mcp",
+    "apps/documents-mcp",
+    "apps/shell-mcp",
+    "apps/scheduler",
+    "apps/wetrop",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "prettier": "^3.9.10"
+  },
+  "overrides": {
+    "@earendil-works/pi-coding-agent": {
+      "undici": "8.12.2",
+      "brace-expansion": "5.0.12",
+      "protobufjs": "7.6.6",
+      "zod": "4.6.7"
+    },
+    "exceljs": {
+      "uuid": "11.1.1"
+    }
+  }
+}

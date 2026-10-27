@@ -1,0 +1,31 @@
+services:
+  tools:
+    image: public.ecr.aws/docker/library/node:24-bookworm-slim
+    working_dir: /app
+    command: ["node", "-e", "setInterval(()=>{},2147483647)"]
+    container_name: wetrop-tools
+    read_only: true
+    network_mode: none
+    user: "${WETROP_UID:-501}:${WETROP_GID:-20}"
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 192
+    mem_limit: 2g
+    cpus: 2
+    environment:
+      COMPANY_ROOT: /company
+      TMPDIR: /company/.wetrop/tmp
+      XDG_CACHE_HOME: /company/.wetrop/cache
+      XDG_CONFIG_HOME: /company/.wetrop/cache/config
+      PI_CODING_AGENT_DIR: /company/.wetrop/cache/pi
+      TZ: Europe/Rome
+      WETROP_OCR_ASSETS: /app/ocr-assets
+    volumes:
+      - type: bind
+        source: ./company
+        target: /company
+      - ./node_modules:/app/node_modules:ro
+      - ./apps:/app/apps:ro
+      - ./packages:/app/packages:ro
+      - ./package.json:/app/package.json:ro
+      - ./.runtime/ocr-assets:/app/ocr-assets:ro

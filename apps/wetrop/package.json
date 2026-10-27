@@ -1,0 +1,39 @@
+{
+  "name": "@steward/wetrop",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/mcp.ts",
+  "exports": {
+    ".": "./src/mcp.ts"
+  },
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@earendil-works/pi-coding-agent": "0.80.2",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@napi-rs/canvas": "^1.0.9",
+    "@steward/action-center": "*",
+    "@steward/audit-log": "*",
+    "@steward/mcp-bridge": "*",
+    "@steward/protocol": "*",
+    "@steward/sqlite": "*",
+    "@steward/usage-ledger": "*",
+    "@steward/watch-engine": "*",
+    "@steward/write-ops": "*",
+    "exceljs": "^4.4.0",
+    "jose": "^6.2.13",
+    "jszip": "^3.10.1",
+    "mammoth": "^1.10.0",
+    "pdf-lib": "^1.17.1",
+    "tesseract.js": "^7.0.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  }
+}

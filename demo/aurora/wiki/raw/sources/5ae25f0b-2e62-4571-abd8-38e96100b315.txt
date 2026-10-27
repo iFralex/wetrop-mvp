@@ -1,0 +1,8 @@
+Original: documents/generated/296fb8b5-75cc-4671-8bd2-176e45ea8bee.pdf
+SHA-256: dc31830f53193690f6c31da5d4ab964782d598976c6673d34235dce39d2b4def
+
+Synthetic approved September expense example
+SYNTHETIC DEMO DOCUMENT - NOT VALID FOR TAX PURPOSES
+September 2026 expenses: EUR 462.00 (Energia EUR 122.00 + Forniture payment EUR 340.00).
+The Forniture invoice is intentionally missing. Source: documents/originals/bank-september.csv. This is a
+cash-movement summary, not a VAT calculation or profit statement.

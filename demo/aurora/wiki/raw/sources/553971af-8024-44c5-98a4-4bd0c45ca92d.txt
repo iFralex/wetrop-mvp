@@ -1,0 +1,5 @@
+Original: documents/originals/sales-september.csv
+SHA-256: ca847f1c2f1c195347993bb66ce251951e52b4557a56d416a3a1b173dbd540e7
+
+invoice,date,net,vat,total,customer
+INV-2026-15,2026-09-20,1000.00,220.00,1220.00,Cliente Demo

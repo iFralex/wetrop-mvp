@@ -1,0 +1,344 @@
+{
+  "nodes": [
+    {
+      "id": "company",
+      "label": "Aurora Servizi S.r.l.",
+      "type": "entity",
+      "path": "wiki/wiki/company.md",
+      "linkCount": 28
+    },
+    {
+      "id": "document-110113f0-b4af-4e0d-b4e1-a921cbe0795f",
+      "label": "9b7a97bc-5e7f-4ba9-b371-9b6238207246.pdf",
+      "type": "source",
+      "path": "wiki/wiki/document-110113f0-b4af-4e0d-b4e1-a921cbe0795f.md",
+      "linkCount": 1
+    },
+    {
+      "id": "document-553971af-8024-44c5-98a4-4bd0c45ca92d",
+      "label": "sales-september.csv",
+      "type": "source",
+      "path": "wiki/wiki/document-553971af-8024-44c5-98a4-4bd0c45ca92d.md",
+      "linkCount": 1
+    },
+    {
+      "id": "document-5ae25f0b-2e62-4571-abd8-38e96100b315",
+      "label": "296fb8b5-75cc-4671-8bd2-176e45ea8bee.pdf",
+      "type": "source",
+      "path": "wiki/wiki/document-5ae25f0b-2e62-4571-abd8-38e96100b315.md",
+      "linkCount": 1
+    },
+    {
+      "id": "document-683f9735-00d7-4554-bef7-4fe666cc3f27",
+      "label": "energia-september.txt",
+      "type": "source",
+      "path": "wiki/wiki/document-683f9735-00d7-4554-bef7-4fe666cc3f27.md",
+      "linkCount": 1
+    },
+    {
+      "id": "document-b2283251-c0ea-4988-85bd-b459fef2ceb1",
+      "label": "company-profile.json",
+      "type": "source",
+      "path": "wiki/wiki/document-b2283251-c0ea-4988-85bd-b459fef2ceb1.md",
+      "linkCount": 1
+    },
+    {
+      "id": "document-b6c75aae-5d9c-4f62-86ba-3e983ed5ca37",
+      "label": "bank-september.csv",
+      "type": "source",
+      "path": "wiki/wiki/document-b6c75aae-5d9c-4f62-86ba-3e983ed5ca37.md",
+      "linkCount": 1
+    },
+    {
+      "id": "period-2026-09",
+      "label": "September 2026",
+      "type": "entity",
+      "path": "wiki/wiki/period-2026-09.md",
+      "linkCount": 4
+    },
+    {
+      "id": "studio-instructions",
+      "label": "Studio instructions",
+      "type": "entity",
+      "path": "wiki/wiki/studio-instructions.md",
+      "linkCount": 2
+    },
+    {
+      "id": "supplier-energia",
+      "label": "Energia Demo S.r.l.",
+      "type": "entity",
+      "path": "wiki/wiki/supplier-energia.md",
+      "linkCount": 4
+    },
+    {
+      "id": "b33ecc14-6fa5-49b5-96dc-1cba3c154fc6",
+      "label": "5ae25f0b-2e62-4571-abd8-38e96100b315-296fb8b5-75cc-4671-8bd2-176e45ea8bee.pdf",
+      "type": "document",
+      "path": "documents/approved/5ae25f0b-2e62-4571-abd8-38e96100b315-296fb8b5-75cc-4671-8bd2-176e45ea8bee.pdf",
+      "linkCount": 2
+    },
+    {
+      "id": "5ae25f0b-2e62-4571-abd8-38e96100b315",
+      "label": "296fb8b5-75cc-4671-8bd2-176e45ea8bee.pdf",
+      "type": "document",
+      "path": "documents/generated/296fb8b5-75cc-4671-8bd2-176e45ea8bee.pdf",
+      "linkCount": 2
+    },
+    {
+      "id": "110113f0-b4af-4e0d-b4e1-a921cbe0795f",
+      "label": "9b7a97bc-5e7f-4ba9-b371-9b6238207246.pdf",
+      "type": "document",
+      "path": "documents/generated/9b7a97bc-5e7f-4ba9-b371-9b6238207246.pdf",
+      "linkCount": 2
+    },
+    {
+      "id": "553971af-8024-44c5-98a4-4bd0c45ca92d",
+      "label": "sales-september.csv",
+      "type": "document",
+      "path": "documents/originals/sales-september.csv",
+      "linkCount": 1
+    },
+    {
+      "id": "683f9735-00d7-4554-bef7-4fe666cc3f27",
+      "label": "energia-september.txt",
+      "type": "document",
+      "path": "documents/originals/energia-september.txt",
+      "linkCount": 1
+    },
+    {
+      "id": "b2283251-c0ea-4988-85bd-b459fef2ceb1",
+      "label": "company-profile.json",
+      "type": "document",
+      "path": "documents/originals/company-profile.json",
+      "linkCount": 1
+    },
+    {
+      "id": "b6c75aae-5d9c-4f62-86ba-3e983ed5ca37",
+      "label": "bank-september.csv",
+      "type": "document",
+      "path": "documents/originals/bank-september.csv",
+      "linkCount": 1
+    },
+    {
+      "id": "case-1",
+      "label": "Synthetic example: collect the missing September supplier invoice",
+      "type": "practice",
+      "linkCount": 1
+    },
+    {
+      "id": "case-2",
+      "label": "Synthetic September expense draft awaiting review",
+      "type": "practice",
+      "linkCount": 2
+    },
+    {
+      "id": "case-3",
+      "label": "Synthetic approved September expense example",
+      "type": "practice",
+      "linkCount": 3
+    },
+    {
+      "id": "monthly-collection",
+      "label": "Monthly document collection",
+      "type": "deadline",
+      "linkCount": 1
+    },
+    {
+      "id": "monthly-vat",
+      "label": "Monthly VAT preparation",
+      "type": "deadline",
+      "linkCount": 1
+    },
+    {
+      "id": "withholding",
+      "label": "Withholding and F24 preparation",
+      "type": "deadline",
+      "linkCount": 1
+    },
+    {
+      "id": "lipe",
+      "label": "Quarterly LIPE preparation",
+      "type": "deadline",
+      "linkCount": 1
+    },
+    {
+      "id": "certifications",
+      "label": "Annual compensation certifications preparation",
+      "type": "deadline",
+      "linkCount": 1
+    },
+    {
+      "id": "year-close",
+      "label": "Annual closing dossier",
+      "type": "deadline",
+      "linkCount": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "company",
+      "target": "supplier-energia",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "period-2026-09",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "studio-instructions",
+      "weight": 1
+    },
+    {
+      "source": "document-110113f0-b4af-4e0d-b4e1-a921cbe0795f",
+      "target": "company",
+      "weight": 1
+    },
+    {
+      "source": "document-553971af-8024-44c5-98a4-4bd0c45ca92d",
+      "target": "company",
+      "weight": 1
+    },
+    {
+      "source": "document-5ae25f0b-2e62-4571-abd8-38e96100b315",
+      "target": "company",
+      "weight": 1
+    },
+    {
+      "source": "document-683f9735-00d7-4554-bef7-4fe666cc3f27",
+      "target": "company",
+      "weight": 1
+    },
+    {
+      "source": "document-b2283251-c0ea-4988-85bd-b459fef2ceb1",
+      "target": "company",
+      "weight": 1
+    },
+    {
+      "source": "document-b6c75aae-5d9c-4f62-86ba-3e983ed5ca37",
+      "target": "company",
+      "weight": 1
+    },
+    {
+      "source": "period-2026-09",
+      "target": "company",
+      "weight": 1
+    },
+    {
+      "source": "period-2026-09",
+      "target": "supplier-energia",
+      "weight": 1
+    },
+    {
+      "source": "studio-instructions",
+      "target": "company",
+      "weight": 1
+    },
+    {
+      "source": "supplier-energia",
+      "target": "company",
+      "weight": 1
+    },
+    {
+      "source": "supplier-energia",
+      "target": "period-2026-09",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "b33ecc14-6fa5-49b5-96dc-1cba3c154fc6",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "5ae25f0b-2e62-4571-abd8-38e96100b315",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "110113f0-b4af-4e0d-b4e1-a921cbe0795f",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "553971af-8024-44c5-98a4-4bd0c45ca92d",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "683f9735-00d7-4554-bef7-4fe666cc3f27",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "b2283251-c0ea-4988-85bd-b459fef2ceb1",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "b6c75aae-5d9c-4f62-86ba-3e983ed5ca37",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "case-1",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "case-2",
+      "weight": 1
+    },
+    {
+      "source": "case-2",
+      "target": "110113f0-b4af-4e0d-b4e1-a921cbe0795f",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "case-3",
+      "weight": 1
+    },
+    {
+      "source": "case-3",
+      "target": "5ae25f0b-2e62-4571-abd8-38e96100b315",
+      "weight": 1
+    },
+    {
+      "source": "case-3",
+      "target": "b33ecc14-6fa5-49b5-96dc-1cba3c154fc6",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "monthly-collection",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "monthly-vat",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "withholding",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "lipe",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "certifications",
+      "weight": 1
+    },
+    {
+      "source": "company",
+      "target": "year-close",
+      "weight": 1
+    }
+  ]
+}

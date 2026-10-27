@@ -1,0 +1,8 @@
+SYNTHETIC INVOICE — NOT VALID FOR TAX PURPOSES
+Supplier: Energia Demo S.r.l.
+Customer: Aurora Servizi S.r.l.
+Invoice: EN-2026-09
+Date: 2026-09-30
+Net EUR 100.00
+VAT EUR 22.00
+Total EUR 122.00

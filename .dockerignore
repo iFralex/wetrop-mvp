@@ -1,0 +1,14 @@
+.git
+node_modules
+**/node_modules
+company
+.runtime
+.env*
+**/.env*
+artifacts
+dist
+**/dist
+.local-models
+.local-evals
+**/target
+**/.build

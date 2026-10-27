@@ -1,0 +1,33 @@
+# Monorepo root ignores. Per-app ignores live in each app's own .gitignore
+# (e.g. apps/llm-wiki/.gitignore).
+node_modules/
+*.tsbuildinfo
+.DS_Store
+
+# Host build outputs
+dist/
+tmp/
+apps/host/dist/
+apps/web/dist/
+
+# SwiftPM launcher outputs
+apps/mac-launcher/.build/
+apps/mac-launcher/.module-cache/
+
+# Whisper GGML model (~148MB, exceeds GitHub's 100MB limit) — downloaded on
+# demand by package-mac.mts, checksum-verified, not committed.
+apps/mac-launcher/speech/models/
+
+# Local secrets — never commit
+.env
+**/.env
+!.env.example
+
+# Private model replay histories and local weights
+.local-evals/
+.local-models/
+
+# Wetrop: every mutable runtime file stays inside this checkout
+company/
+.runtime/
+.env.wetrop
